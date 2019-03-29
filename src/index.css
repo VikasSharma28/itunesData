@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card{
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0,0,0,.04706) 0 2px 3px 0;
+  box-shadow: rgba(0,0,0,.04706) 0 2px 3px 0;
+  margin-bottom: 24px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: all .3s ease;
+  -o-transition: .3s;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  width: 100%;
+  background-color: #b5b6b8;
+  overflow: hidden;
+}
+.card:hover {
+  -webkit-box-shadow: 0 1px 25px rgba(153,153,153,.5);
+  box-shadow: 0 1px 25px rgba(153,153,153,.5);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.card label{
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px;
+  display: inherit;
+}
+.card__favourite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 0 2px;
+
+}
+.card__favourite .count {
+  padding: 0px 12px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+
+.card__description {
+  padding: 12px;
+}
+
+.card .previous-price {
+  height: 13px;
+  max-height: 13px;
+}
+.card .actual-price {
+  line-height: 1.2;
+}
+.font-weight-semibold {
+  font-weight: 600!important;
+}
+.txt-brand-secondary {
+  color: #34a853!important;
+}
+.font-weight-regular {
+  font-weight: 400!important;
+}
+.h6 {
+  font-size: 1em!important;
+  line-height: 18px;
+}
+
+.card__artist {
+  height: 33px;
+  max-height: 33px;
+}
+.artist-name{
+  color: #333;
+  font-size: .9em !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.dataList{
+    list-style-type: none;
+
+}
+/* template {
+  display: block !important;
+} */
+
+.dataList .card__favourite {
+  
+  top: -1px;
+  right: 12px;
+
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.title{
+  width: 80%;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+template .card__artist{
+  height: inherit;
+}
+template .card{
+  margin-bottom: 10px !important;
+}
+template .artist-name{
+  font-size: 0.8em !important;
+}
+
+template .card .actual-price{
+  font-size: 0.8em;}
+  .padding-top-xs{
+    padding-top: 6px !important;
+  }
+
+  /* comman styles */
+  .margin-reset {
+    margin: 0!important;
+  }
+  .padding-reset {
+    padding: 0!important;
+  }
+  .padding-left-xs{
+    padding-left: 6px !important;
+  }
+  .padding-top-xs{
+    padding-top: 6px !important;
+  }
+  hr {
+    border: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+  .margin-top-s {
+    margin-top: 12px;
+  }
+  .margin-bottom-m {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 576px) { 
+    template {
+      display: block !important;
+    }
+    .container > .row{
+      display: none;
+    }
+   }
